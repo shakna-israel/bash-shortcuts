@@ -1,0 +1,9 @@
+# Reset repository to remote
+## Example: gitDrag remote branch
+## Example 2: gitDrag origin master
+
+function gitDrag()
+{
+	git fetch
+	git reset --hard "$1"/"$2"
+}
