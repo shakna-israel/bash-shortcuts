@@ -3,12 +3,12 @@
 
 function hubClone()
 {
-	git clone https://github.com/"Insert parameter one"/"insert parameter two"
-	cd "insert parameter two"
+	git clone https://github.com/"$1"/"$2"
+	cd "$2"
 }
 
 function hubCloneS()
 {
-	git clone git@github.com:"insert parameter one"/"insert parameter two"
-	cd "insert parameter two"
+	git clone git@github.com:"$1"/"$2"
+	cd "$2"
 }
