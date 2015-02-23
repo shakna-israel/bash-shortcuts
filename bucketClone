@@ -1,0 +1,14 @@
+# Github clone and change directory into new repository.
+## Example: bitbucket user repository
+
+function bucketClone()
+{
+	git clone https://bitbucket.org/"$1"/"$2".git
+	cd "$2"
+}
+
+function bucketCloneS()
+{
+	git clone git@bitbucket.org:"$1"/"$2".git
+	cd "$2"
+}
