@@ -1,0 +1,8 @@
+# Automatically run apt-get update before installing via synaptic
+## Example: installApt ssh
+
+function installApt()
+{
+	sudo apt-get update
+	sudo apt-get install "$@"
+}
