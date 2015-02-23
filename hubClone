@@ -1,0 +1,14 @@
+# Github clone and change directory into new repository.
+## Example: hubClone shakna-israel bash-shortcuts
+
+function hubClone()
+{
+	git clone https://github.com/"Insert parameter one"/"insert parameter two"
+	cd "insert parameter two"
+}
+
+function hubCloneS()
+{
+	git clone git@github.com:"insert parameter one"/"insert parameter two"
+	cd "insert parameter two"
+}
