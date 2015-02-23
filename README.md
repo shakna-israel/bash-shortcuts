@@ -6,3 +6,15 @@ The file ```~/.bashrc``` is used by Linux shells using bash, to create various c
 This repository holds a series of files, all of which can be added to your own ```~/.bashrc``` to make life simpler.
 
 To make the repository more manageable, they will be in their own files. Not just one giant file you can copy over.
+
+To install a particular shortcut:
+```
+cat shortcut >> ~/.bashrc
+```
+
+For example:
+```
+cat mkcd >> ~/.bashrc
+```
+
+You will then have to restart bash.
