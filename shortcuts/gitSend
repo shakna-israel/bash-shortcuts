@@ -1,0 +1,7 @@
+# Automatically push latest on default
+## Example: gitSend
+
+function gitDrag()
+{
+	git push origin master
+}
