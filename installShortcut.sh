@@ -7,6 +7,7 @@ function defineVariables()
 	SHORTCUT=shortcuts/"$1"
 	echo "$1"
 	echo "$SHORTCUT"
+	export $SHORTCUT
 }
 
 function checkNewlineChars()
@@ -25,9 +26,11 @@ function checkShortcutAppended()
 	if grep -q "$Shorcut" ~/.bashrc; then
 		echo "Shortcut already exists. Exiting."
 		Continue=false
+		export $Continue
 	else
 		echo "Shortcut not found in ~/.bashrc. Proceeding."
 		Continue=true
+		export $Continue
 	fi
 }
 
