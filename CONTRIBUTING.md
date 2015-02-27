@@ -5,6 +5,7 @@ Contributions are more than welcome, but should follow a similar style to the pr
 * Additional shortcuts should be stored in their own file.
 * Only one new shortcut per pull request.
 * The file produced should not have a file extension.
+* The file should be placed inside the 'shortcuts' folder.
 * You should include an explanation and example of the shortcut in comments, as seen in existing shortcuts.
 * You should create a new branch before making a pull request. **Pull requests on a master branch will not be accepted.**
 
