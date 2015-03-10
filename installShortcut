@@ -1,0 +1,4 @@
+#if ~/.bashrc contains "$1"
+	#skip
+#else
+cat "$1" >> ~/.bashrc
