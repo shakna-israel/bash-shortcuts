@@ -1,5 +1,5 @@
 SHORTCUT=shortcuts/"$1"
-if grep -q "$Shortcut" ~/.bashrc; then
+if grep -q "$1" ~/.bashrc; then
 	echo "Shortcut already exists. Exiting."
 else
 	echo "Shortcut not found in ~/.bashrc. Proceeding."
