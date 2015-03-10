@@ -1,4 +1,3 @@
-SHORTCUT=shortcuts/"$1"
 if grep -q "$1" ~/.bashrc; then
 	echo "Shortcut already exists. Exiting."
 else
@@ -8,5 +7,5 @@ else
 	echo "Backing up ~/.bashrc to ~/bashrc.bak" 
 	mv ~/.bashrc.new ~/.bashrc
 	echo "Replaced ~/.bashrc with new version."
-	cat "$Shortcut" >> ~/.bashrc
+	cat shortcuts/"$1" >> ~/.bashrc
 fi
