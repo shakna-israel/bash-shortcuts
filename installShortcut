@@ -1,4 +1,12 @@
-#if ~/.bashrc contains "$1"
-	#skip
-#else
-cat "$1" >> ~/.bashrc
+SHORTCUT=shortcuts/"$1"
+if grep -q "$Shortcut" ~/.bashrc; then
+	echo "Shortcut already exists. Exiting."
+else
+	echo "Shortcut not found in ~/.bashrc. Proceeding."
+	{ cat ~/.bashrc; echo ""; } > ~/.bashrc.new
+	cp ~/.bashrc ~/.bashrc.bak
+	echo "Backing up ~/.bashrc to ~/bashrc.bak" 
+	mv ~/.bashrc.new ~/.bashrc
+	echo "Replaced ~/.bashrc with new version."
+	cat "$Shortcut" >> ~/.bashrc
+fi
