@@ -9,12 +9,12 @@ To make the repository more manageable, they will be in their own files. Not jus
 
 To install a particular shortcut:
 ```
-cat shortcut >> ~/.bashrc
+./installShortcut shortcut
 ```
 
 For example:
 ```
-cat mkcd >> ~/.bashrc
+./installShortcut mkcd
 ```
 
-You will then have to restart bash.
+The installer will then restart bash.

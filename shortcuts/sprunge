@@ -1,0 +1,4 @@
+# Commandline pastebin @ sprunge.us
+## Example: cat testfile | sprunge
+
+alias sprunge='curl -F "sprunge=<-" http://sprunge.us'

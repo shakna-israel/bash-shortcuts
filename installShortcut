@@ -1,0 +1,12 @@
+if grep -q "$1" ~/.bashrc; then
+	echo "Shortcut already exists. Exiting."
+else
+	echo "Shortcut not found in ~/.bashrc. Proceeding."
+	{ cat ~/.bashrc; echo ""; } > ~/.bashrc.new
+	cp ~/.bashrc ~/.bashrc.bak
+	echo "Backing up ~/.bashrc to ~/bashrc.bak" 
+	mv ~/.bashrc.new ~/.bashrc
+	echo "Replaced ~/.bashrc with new version."
+	cat shortcuts/"$1" >> ~/.bashrc
+	source ~/.bashrc
+fi
